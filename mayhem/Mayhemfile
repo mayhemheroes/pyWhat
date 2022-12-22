@@ -1,0 +1,8 @@
+project: pywhat
+target: fuzz-pywhat
+
+image: ghcr.io/matl4c/fuzz-pywhat:latest
+
+cmds:
+  - cmd: /src/mayhem/fuzz-pywhat.py
+    libfuzzer: true
