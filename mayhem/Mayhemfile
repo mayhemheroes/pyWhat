@@ -1,7 +1,5 @@
 project: pywhat
 target: fuzz-pywhat
-duration: 600
-image: ghcr.io/matl4c/fuzz-pywhat:latest
 
 cmds:
   - cmd: /src/mayhem/fuzz-pywhat.py
