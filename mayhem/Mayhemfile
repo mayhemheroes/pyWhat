@@ -1,0 +1,6 @@
+project: pywhat
+target: fuzz-pywhat
+
+cmds:
+  - cmd: /src/mayhem/fuzz-pywhat.py
+    libfuzzer: true
