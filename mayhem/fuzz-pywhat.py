@@ -9,7 +9,7 @@ with atheris.instrument_imports():
 
 def TestOneInput(input_bytes):
     fdp = atheris.FuzzedDataProvider(input_bytes)
-    data = fdp.ConsumeUnicode(sys.maxsize) 
+    data = fdp.remainingBytes() 
 
     r = pywhat.identifier.Identifier()
     r.identify(data, only_text=False)
